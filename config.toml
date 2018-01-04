@@ -1,0 +1,9 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "MAWK! | Hi"
+
+paginate = 5
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"

@@ -1,0 +1,15 @@
+{{ define "main" }}
+    <div class="article-detail-container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>{{ .Title }}</h1>        
+                    <span>{{ .Params.author }} | {{ .PublishDate.Format "Mon Jan 2 2006" }} </span>
+                    <p>
+                        {{ .Content }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }}

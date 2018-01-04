@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container bg-dark">
+            <h1 class="display-4 text-light">Mark Struzinski</h1>
+            <p class="lead text-light">Thoughts on software development and technology</p>
+        </div>
+    </div>
+
+    <div class="container list-container">
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+            {{ range $paginator.Pages }}
+                {{ .Render "article-summary" }}
+            {{ end }}
+            
+            {{ if $paginator.HasPrev }}
+                <a href="{{ $paginator.Prev.URL }}" class="btn btn-outline-primary tint-color" role="button">Previous</a>
+            {{ else }}
+                <a href="#" class="btn btn-outline-primary disabled" role="button">Previous</a>
+            {{ end }}
+
+            {{ if $paginator.HasNext }}
+                <a href="{{ $paginator.Next.URL }}" class="btn btn-outline-primary tint-color">Next</a>
+            {{ else }}
+                <a href="#" class="btn btn-outline-primary disabled" role="button">Next</a>
+            {{ end }}
+    </div>
+{{ end }}

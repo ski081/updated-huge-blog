@@ -1,0 +1,18 @@
+<div class="container article-container">
+    <div class="row">
+        <div class="col-md-12 summary-container">
+            <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
+            <span class="text-muted">{{ .PublishDate.Format "Mon Jan 2 2006" }}</span> | 
+            <span class="text-muted">  {{ .Params.author }}</span>
+
+            <p>---</p>
+            <p class="text-secondary">{{ .Summary }}</p>
+            <div class="tag-badge-container">
+                {{ range .Params.tags }}
+                    <a href="/tags/{{ . }}" class="badge badge-primary tag-badge">{{ . }}</a> 
+                {{ end }}
+            </div>
+            <hr />
+        </div>
+    </div>
+</div>
