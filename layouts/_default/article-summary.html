@@ -2,10 +2,8 @@
     <div class="row">
         <div class="col-md-12 summary-container">
             <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
-            <span class="text-muted">{{ .PublishDate.Format "Mon Jan 2 2006" }}</span> | 
-            <span class="text-muted">  {{ .Params.author }}</span>
-
-            <p>---</p>
+            {{ partial "byline.html" . }}
+            
             <p class="text-secondary article-content">{{ .Summary }}</p>
             {{ partial "tag-section.html" . }}
             <hr />

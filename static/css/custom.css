@@ -3,7 +3,7 @@ body {
 }
 
 .header-container {
-    padding-top: 20px;
+    padding: 20px 0;
     margin: 0;
 }
 
@@ -44,6 +44,10 @@ body {
 
 .summary-container a:hover {
     text-decoration: underline;
+}
+
+.byline-separator {
+    margin: 20px 0;
 }
 
 .tint-color {
