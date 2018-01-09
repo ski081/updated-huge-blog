@@ -1,0 +1,5 @@
+<div class="tag-badge-container">
+    {{ range .Params.tags }}
+        <h5><a href="/tags/{{ . }}" class="badge badge-primary tag-badge">{{ . }}</a></h5>
+    {{ end }}
+</div>

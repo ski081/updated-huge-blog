@@ -5,9 +5,11 @@
                 <div class="col">
                     <h1>{{ .Title }}</h1>        
                     <span>{{ .Params.author }} | {{ .PublishDate.Format "Mon Jan 2 2006" }} </span>
-                    <p>
+                    <div class="article-content">
                         {{ .Content }}
-                    </p>
+                    </div>
+
+                    {{ partial "tag-section.html" . }}
                 </div>
             </div>
         </div>

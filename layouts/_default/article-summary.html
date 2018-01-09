@@ -1,4 +1,4 @@
-<div class="container article-container">
+<div class="container article-summary-container">
     <div class="row">
         <div class="col-md-12 summary-container">
             <a href="{{ .Permalink }}"><h4>{{ .Title }}</h4></a>
@@ -6,12 +6,8 @@
             <span class="text-muted">  {{ .Params.author }}</span>
 
             <p>---</p>
-            <p class="text-secondary">{{ .Summary }}</p>
-            <div class="tag-badge-container">
-                {{ range .Params.tags }}
-                    <a href="/tags/{{ . }}" class="badge badge-primary tag-badge">{{ . }}</a> 
-                {{ end }}
-            </div>
+            <p class="text-secondary article-content">{{ .Summary }}</p>
+            {{ partial "tag-section.html" . }}
             <hr />
         </div>
     </div>

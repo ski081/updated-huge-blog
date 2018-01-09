@@ -3,24 +3,28 @@
     <head>
         <meta charset="utf-8">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/afbf2987e3.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
         <title>
             {{ block "title" . }}
-                {{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}
+                {{ .Site.Title }} {{ if not .IsHome }} | {{ .Title }} {{ end }}
             {{ end }}
         </title>
         
-        <link rel="stylesheet" href="css/custom.css" class="css">
+        <link rel="stylesheet" href="/css/custom.css">
     </head>
     
     <body>
-        {{ block "header" . }}{{ partial "site-header.html" . }}{{ end }}
-        
-        {{ block "main" . }}{{ end }}
+        <div class="site-container">
+            {{ block "header" . }}{{ partial "site-header.html" . }}{{ end }}
 
-        {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+            <main>
+                {{ block "main" . }}{{ end }}
+            </main>
+    
+            {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+        </div>
     </body>
 </html>
