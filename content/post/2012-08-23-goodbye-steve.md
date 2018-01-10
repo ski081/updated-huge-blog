@@ -29,10 +29,11 @@ services which set the standard for excellence in technology.
 A quote out of the recent statement by President Obama on Steve Jobs’ passing
 struck me as particularly apt.
 
-
-> The world has lost a visionary. And there may be no greater tribute to Steve’s
-> success than the fact that much of the world learned of his passing on a device
-> he invented.
+{{% blockquote author="Barak Obama" %}}
+The world has lost a visionary. And there may be no greater tribute to Steve’s
+success than the fact that much of the world learned of his passing on a device
+he invented.
+{{% /blockquote %}}
 
 I was glad to hear he passed peacefully and with his family.
 

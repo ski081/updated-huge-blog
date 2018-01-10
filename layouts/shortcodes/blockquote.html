@@ -1,0 +1,13 @@
+<blockquote>
+    {{ .Inner }}
+
+    {{ with .Get "author" }}
+    <footer class="blockquote-footer">
+        {{ . }}
+    {{ end }}
+        {{ with .Get "source" }}
+            <cite title="Source Title">{{ . }} </cite>
+        {{ end }}
+    {{ if .Get "author" }}</footer>{{ end }}
+
+</blockquote>
