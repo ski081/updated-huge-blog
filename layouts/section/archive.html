@@ -1,0 +1,6 @@
+{{ define "main"}}
+    <h1>Archive</h1>
+    {{ range (where .Data.Pages "Section" "post").Reverse }} 
+        {{.Title}} - {{ .PublishDate }}</br>  
+    {{ end }}
+{{ end }}

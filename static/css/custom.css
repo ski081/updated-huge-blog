@@ -79,11 +79,34 @@ body {
     color: #4A90E2;
 }
 
-.article-content a:hover {
+.article-content a:hover, 
+.about-container a:hover {
     color: #fff;
     background-color: #4A90E2;
     text-decoration: none;
 }
+
+.contact-list a {
+    color: #4A90E2;
+}
+
+.contact-link a:hover {
+    color: #4A90E2;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.about-content-container:not(:last-child):after {
+    display: block;
+    height: 1px;
+    background-color: #4A90E2;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -164,4 +187,16 @@ blockquote {
 blockquote::after {
     /*Reset to make sure*/
     content: "";
+}
+
+.about-container {
+    margin-top: 30px;
+}
+
+#profile-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
 }
