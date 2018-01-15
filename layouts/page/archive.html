@@ -1,7 +1,7 @@
 {{ define "main" }}
     <h1>Archive</h1>
 
-    {{ range .Data.Pages }} 
+    {{ Range .Data.Pages }} 
         {{.Title}} - {{ .PublishDate }}</br>  
     {{ end }}
 {{ end }}

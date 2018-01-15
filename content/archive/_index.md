@@ -1,8 +1,8 @@
 +++
 
 author = "Mark Struzinski"
-title = "About"
+title = "Archive"
 type = "page"
-layout = "about"
+layout = "archive"
 
 +++
