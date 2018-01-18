@@ -1,10 +1,18 @@
 {{ define "main" }}
-    <ul>
-        {{ range .Data.Pages }}
-            <li>
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-                {{ .Params.wikipedia }}
-            </li>
-        {{ end }}
-    </ul>
+    <div class="container tag-container">
+        <div class="row">
+            <div class="col">
+                <h2>All Posts Tagged <span class="badge badge-primary tag-badge">{{ .Data.Term }}</span></h2>
+                <hr>
+                <ul class="archive-entry-list">
+                    {{ range .Data.Pages }}
+                        <li class="archive-entry">
+                            <a href="{{ .Permalink }}" class="archive-entry-title">{{ .Title }}</a>
+                        </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+
 {{ end }}

@@ -1,7 +1,24 @@
 {{ define "main" }}
-    <h1>Archive</h1>
+    <div class="container archive-container">
+        <div class="row">
+            <div class="col">
+                {{ $paginator := .Paginate ((where .Site.Pages "Type" "post").GroupByDate "2006-01") 50 -}}
 
-    {{ range .Data.Pages }} 
-        {{.Title}} - {{ .PublishDate }}</br>  
-    {{ end }}
+                {{- range $paginator.PageGroups }}
+                    <ul class="archive-group">
+                        <li><h3>{{ .Key }}</h3></li>
+                        <ul class="archive-entry-list">
+                            {{- range .Pages }}
+                                <li class="archive-entry">
+                                    <a href="{{ .Permalink }}" class="archive-entry-title">{{ .Title }}</a>
+                                    {{ partial "tag-section.html" . }}
+                                </li>
+                            {{ end }}
+                        </ul>
+                    </ul>
+                    <hr>
+                {{ end }}
+            </div>
+        </div>
+    </div>
 {{ end }}
