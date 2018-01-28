@@ -18,7 +18,7 @@ hobby to a full time developer on their platform. For the first time in my life,
 I have questioned that someone actually pays me to work on this stuff. I guess
 if you ask yourself that question, you are doing the right thing with your life.
 
-<!-- more -->
+<!--more-->
 
 I was surprised and saddened to hear of Steve Jobs’ passing tonight. He truly
 made a difference in our world with sheer will and by questioning everything.

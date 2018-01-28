@@ -10,7 +10,7 @@ showSocial = false
 
 I’m in the process of adding OCUnit tests to an existing iOS code base. Throughout this process, the biggest pain point I have encountered has been the simulator taking over the screen after an application test suite has run.
 
-<!-- more -->
+<!--more-->
 
 This behavior completely breaks the flow of red/green/refactor, especially when you are on a roll. Here is a typical round trip for me when testing using the default behavior:
 

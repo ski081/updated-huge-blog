@@ -17,7 +17,7 @@ From Simulator (when simulator is open)*:
 2. Click iOS Simulator
 3. Click Reset Content and Settings
 
-<!-- more -->
+<!--more-->
 
 ### Benefits of this approach:
 

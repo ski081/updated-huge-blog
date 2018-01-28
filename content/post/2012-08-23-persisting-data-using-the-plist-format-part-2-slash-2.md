@@ -18,7 +18,7 @@ stored as constants in a code file (`Constants.h/.m`). This allows for compile
 time checking and keeps us from having to litter our code with magic strings
 when trying to access the values.
 
-<!-- more -->
+<!--more-->
 
 Here is a sample workflow to get this method up and running:
 

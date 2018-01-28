@@ -20,7 +20,7 @@ excellent, and just hit its 2nd edition. We are going to build out a very
 simple data model, with just one entity. This will allow us to set up the core
 data stack and verify that Magical Record is working.
 
-<!-- more -->
+<!--more-->
 
 Let’s get core data set up:
 

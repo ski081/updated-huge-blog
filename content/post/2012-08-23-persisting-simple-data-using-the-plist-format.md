@@ -19,7 +19,7 @@ Some of the ideas we considered for persistence included:
 - JSON saved in a flat file format
 - PList saved directly to disk from a Cocoa object such as an NSArray or NSDictionary
 
-<!-- more -->
+<!--more-->
 
 Because of our specific set of requirements and our hardware stack, we opted to
 go with the PList format. Our main driver for this decision was the amount of

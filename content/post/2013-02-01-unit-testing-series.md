@@ -15,7 +15,7 @@ by unit tests, and to possibly get some UI tests built around user interactions.
 Unfortunately, deadlines intervene, and the tests get abandoned. With my most
 recent project, I decided to put all of these practices in place.
 
-<!-- more -->
+<!--more-->
 
 This is going to require learning as I go, and I intend to document my
 progress here for my own learning and hopefully to help anyone else who is

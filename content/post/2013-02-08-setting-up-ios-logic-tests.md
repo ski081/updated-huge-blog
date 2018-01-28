@@ -15,7 +15,7 @@ watched an excellent [unit testing course][lynda] on [Lynda][lynda 2].
 In that course, Ron Lisle goes over the advantages of using logic tests.
 The most compelling factor in using logic tests over application tests is speed.
 
-<!-- more -->
+<!--more-->
 
 Application tests actually bootstrap the entire app in order to run. This takes
 a considerable amount of time and can be a bottleneck. You want your unit tests

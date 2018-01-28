@@ -5,11 +5,8 @@
                 {{ $paginator := .Paginate ((where .Site.Pages "Type" "post").GroupByDate "2006-01") -}}
                 <h1>Archive</h1>
                 {{- range .PageGroups }}
-
                     <ul>
-
-                            <li>{{ .Key }}---</li>
-
+                        <li>{{ .Key }}---</li>
                     </ul>
                     {{.Title}} - {{ .PublishDate }}</br>  
                 {{ end }}

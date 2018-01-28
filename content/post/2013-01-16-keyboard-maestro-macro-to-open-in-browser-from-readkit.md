@@ -16,7 +16,7 @@ they are working solely on the mac app now. Read Later was good, but some much
 needed updates were never implemented. The display for articles was frequently
 skewed, and the app had started to crash a lot.
 
-<!-- more -->
+<!--more-->
 
 ReadKit’s display of articles is much smoother, and the overall look and feel
 is fresh and crisp. One thing I do miss from Read Later is the keyboard

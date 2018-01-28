@@ -13,7 +13,7 @@ This is my first stab at an iPhone project. I'm writing an app that consumes an 
 
 If I was writing this app in .NET, I'd go out looking for the proper class libraries to parse the XML and begin framing out a class to perform all the functions I needed to populate an object to be 	persisted to the UI.
 
-<!-- more -->
+<!--more-->
 
 When researching the best way to do this, I found 2 prevalent methods of parsing XML in Cocoa:
 

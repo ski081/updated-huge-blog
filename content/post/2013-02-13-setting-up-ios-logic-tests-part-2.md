@@ -17,7 +17,7 @@ party libraries to make sure that the libraries are working. Then we’ll set up
 logic tests and see what breaks with CocoaPods (spoiler: compiler
 	errors ahead!).
 
-<!-- more -->
+<!--more-->
 
 ## SVProgressHUD
 

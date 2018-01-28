@@ -12,7 +12,7 @@ showSocial = false
 
 I had an issue on a very large project in XCode. Starting 2 days ago, all of my syntax highlighting was completely broken. This is bad, but even worse, my code completion worked only partially. I was getting autocomplete for local variables only. When calling framework methods with a lot of parameters, I rely pretty heavily on code completion. I tried all of the usual fixes.
 
-<!-- more -->
+<!--more-->
 
 This includes:
 - Doing a `Project Clean (⌘⇧K)`

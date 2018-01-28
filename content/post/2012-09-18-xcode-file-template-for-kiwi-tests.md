@@ -10,7 +10,7 @@ showSocial = false
 
 I started using [Kiwi][kiwi] to drive unit tests on my most recent project. Kiwi is an excellent [BDD (Behavior Driven Development)][bdd] framework that helps drive your code design by making test expectations very clear. It greatly increases the readability of your unit tests.
 
-<!-- more -->
+<!--more-->
 
 The Kiwi library only requires implementation files to write each spec (test). Per the [documentation][documentation], you follow these steps to create a spec:
 

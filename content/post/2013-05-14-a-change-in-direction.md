@@ -10,7 +10,11 @@ showSocial = false
 
 In hitting brick walls, taking road trips for work, and feeling guilty about
 about posting in weeks, I have reconsidered the return on investment when fully
-implementing logic tests. I have dealt with compiler flag issues, missing
+implementing logic tests. 
+
+<!--more-->
+
+I have dealt with compiler flag issues, missing
 imports, manually adding .m files for compilation, and a host of other issues.
 After having my own doubts, and reading [this post][1] (the entire thing had me
 nodding my head), I've decided to reconsider my take on application vs unit

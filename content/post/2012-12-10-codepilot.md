@@ -13,7 +13,7 @@ showSocial = false
  will open any file that has been indexed in your project, and also allows for
  searching symbols within a file.
 
-<!-- more -->
+<!--more-->
 
 I know the native Xcode Open Quickly (`⌘ + ⬆ + O`) dialog has also been able to
 do this for a long time, but it has always seemed to me to be a little bit

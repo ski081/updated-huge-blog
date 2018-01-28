@@ -15,7 +15,7 @@ files for the content. I’ve been slowly building up some markdown
 specific [TextExpander][smilesoftware] snippets and [Keyboard Maestro][keyboardmaestro]
 macros to make things easier.
 
-<!-- more -->
+<!--more-->
 
 I got some great Keyboard Maestro tips from Patrick Welker in
 [this RocketInk article][km guide]. I’ve also been creating small TextExpander

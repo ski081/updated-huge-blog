@@ -18,7 +18,7 @@ tests.
 
 Here's what I did:
 
-<!-- more -->
+<!--more-->
 
 ### Architecture
 

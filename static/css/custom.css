@@ -89,7 +89,7 @@ a.nav-item-selected {
 
 .article-content a:hover, 
 .about-container a:hover,
-.series-summary a:hover {
+.series-summary a:hover, .series-summary-card:hover  {
     color: #fff;
     background-color: #4A90E2;
     text-decoration: none;
@@ -265,4 +265,9 @@ blockquote::after {
 #not-found-image {
     max-width: 200px;
     max-height: 200px;
+}
+
+.series-summary-card {
+    padding: 20px;
+    margin-bottom: 20px;
 }

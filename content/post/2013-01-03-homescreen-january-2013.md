@@ -12,7 +12,7 @@ I’m going to try to do a post once per month detailing my current iPhone
 homescreen. If it works out well, I might also do one a month for the iPad as
 well. Below is a screenshot of my current homescreen.
 
-<!-- more -->
+<!--more-->
 
 {{< figure src="/images/homescreen-2013-01.png" caption="" >}}
 

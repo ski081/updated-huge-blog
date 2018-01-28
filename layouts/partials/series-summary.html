@@ -9,13 +9,28 @@
             Other posts in this series:
             <br/>
         </p>
-        {{ $name := $name | urlize }}
-        {{ $series := index .Site.Taxonomies.series $name }}
 
         {{ range $series.Pages }}
-            <li>
-                <a href="{{.Permalink}}">{{.LinkTitle}}</a> - {{.Date.Format "2006-01-02"}}
-            </li>
+            <a href="{{.Permalink}}" class="series-card-link">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card series-summary-card">
+                                <div class="card-block">
+                                    <h4 class="card-title">{{.LinkTitle}}</h4>
+                                    <p class="text-secondary">
+                                        {{.Date.Format "2006-01-02"}}
+                                    </p>
+        
+                                    <div class="card-block">
+                                        {{ .Summary }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </a>
         {{ end }}
-    {{end}}    
+    {{ end }}    
 </div>

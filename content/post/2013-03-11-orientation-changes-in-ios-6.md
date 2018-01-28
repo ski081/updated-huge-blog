@@ -15,7 +15,7 @@ overridden the `shouldAutoRotateToInterfaceOrientation` method and returned
 researching how orientation issues should be handled going forward, and here is
 the way I made my specific scenario work.
 
-<!-- more -->
+<!--more-->
 
 In iOS 6, the system queries the **topmost** visible view controller to see if
 it should rotate.

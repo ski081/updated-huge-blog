@@ -14,6 +14,8 @@ processing all the valuable information that was crammed into my brain.
 The Klein family puts together a great mix of technical content, community
 interaction, and fun events.
 
+<!--more-->
+
 The speakers were top notch.
 I got to meet [Ben Scheirman][ben] of [NSScreenCast][nsscreencast] fame,
 who I've admired for a long time. Both of his talks were packed full of useful

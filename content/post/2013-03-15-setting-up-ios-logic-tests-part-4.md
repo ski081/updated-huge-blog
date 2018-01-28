@@ -14,11 +14,11 @@ integration testing. In the [last post][last-post], we discussed setting up
 Core Data and the Magical Record library. This week, we’re going to set up our
 logic testing bundle. Let’s get started.
 
-<!-- more -->
+<!--more-->
 
 **Quick note: I recreated the sample project that goes along with this series.
 I made some unfortunate naming mistakes early on that made it unclear which
-bundles we were refernecing and working with. Going forward, the actual app
+bundles we were referencing and working with. Going forward, the actual app
 bundle is named **SampleApp**, and other testing bundles will be named
 appropriately. I’m taking down the old GitHub repo and adding one here named SampleApp
 
