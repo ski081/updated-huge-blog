@@ -5,6 +5,7 @@ date = "2013-02-08"
 tags = ["unit-testing-series"]
 author = "Mark Struzinski"
 showSocial = false
+series = ["Unit Testing Beginner Series"]
 
 +++
 

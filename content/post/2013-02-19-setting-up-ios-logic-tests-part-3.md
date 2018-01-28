@@ -4,7 +4,7 @@ title = "Setting Up iOS Logic Tests [Part 3]"
 date = "2013-02-19"
 tags = ["unit-testing-series"]
 author = "Mark Struzinski"
-showSocial = false
+series = ["Unit Testing Beginner Series"]
 
 +++
 

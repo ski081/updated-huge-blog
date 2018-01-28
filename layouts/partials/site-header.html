@@ -14,9 +14,9 @@
                 {{ range .Site.Menus.main }}
                     <li class="nav-item">
                         <a href="{{ .URL }}" 
-                                    {{ if  or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} 
-                                        class="nav-item-selected"
-                                    {{ end }}>
+                            {{ if  or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} 
+                                class="nav-item-selected"
+                            {{ end }}>
                         {{ .Name }}
                         </a>
                     </li>

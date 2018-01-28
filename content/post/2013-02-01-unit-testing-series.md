@@ -5,6 +5,7 @@ date = "2013-02-01"
 tags = ["unit-testing", "frank", "continuous-integration","ocunit", "automation", "unit-testing-series"]
 author = "Mark Struzinski"
 showSocial = false
+series = ["Unit Testing Beginner Series"]
 
 +++
 

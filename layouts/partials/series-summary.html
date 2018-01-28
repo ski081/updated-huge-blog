@@ -1,0 +1,21 @@
+<div class="series-summary">
+    {{ if .Params.series }}
+        {{ $name := index .Params.series 0 }}
+        <hr/>
+        <p>
+            This is a post in the <b>{{$name}}</b> series.
+        </p>
+        <p>        
+            Other posts in this series:
+            <br/>
+        </p>
+        {{ $name := $name | urlize }}
+        {{ $series := index .Site.Taxonomies.series $name }}
+
+        {{ range $series.Pages }}
+            <li>
+                <a href="{{.Permalink}}">{{.LinkTitle}}</a> - {{.Date.Format "2006-01-02"}}
+            </li>
+        {{ end }}
+    {{end}}    
+</div>
