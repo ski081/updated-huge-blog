@@ -12,15 +12,15 @@ This is part 3 in a [multi-part series][series] on iOS unit testing and
 integration testing. In the [last post][last-post], we discussed setting
 up [SVProgressHUD][svprogresshud].
 
-## Magical Record
+<!--more-->
+
+### Magical Record
 [Magical Record][magicalrecord] is an excellent library that compliments the
 Core Data framework. I’m going to assume some knowledge of Core Data here.
 If you need a reference, the [Core Data][amazon] book by Marcus Zarra is
 excellent, and just hit its 2nd edition. We are going to build out a very
 simple data model, with just one entity. This will allow us to set up the core
 data stack and verify that Magical Record is working.
-
-<!--more-->
 
 Let’s get core data set up:
 

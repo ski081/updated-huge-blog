@@ -66,6 +66,9 @@ a.nav-item-selected {
     padding: 30px 0 30px 0;
 }
 
+/* Tag Badge styles
+-------------------------------------------------- */
+
 .tag-badge-container a {
     color: #fff;
 }
@@ -82,14 +85,12 @@ a.nav-item-selected {
     text-decoration: none;
 }
 
-.article-content a,
-.series-summary a {
+.article-content a {
     color: #4A90E2;
 }
 
 .article-content a:hover, 
-.about-container a:hover,
-.series-summary a:hover, .series-summary-card:hover  {
+.about-container a:hover {
     color: #fff;
     background-color: #4A90E2;
     text-decoration: none;
@@ -103,17 +104,6 @@ a.nav-item-selected {
     color: #4A90E2;
     background-color: transparent;
     text-decoration: none;
-}
-
-.about-content-container:not(:last-child):after {
-    display: block;
-    height: 2px;
-    background-color: #4A90E2;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .archive-container {
@@ -196,6 +186,9 @@ pre {
     color: #4A90E2;
 }
 
+/* BlockQuote styles
+-------------------------------------------------- */
+
 blockquote {
     display:block;
     background: #fff;
@@ -234,6 +227,9 @@ blockquote::after {
     content: "";
 }
 
+/* About Page styles
+-------------------------------------------------- */
+
 .about-container {
     margin-top: 30px;
 }
@@ -245,6 +241,20 @@ blockquote::after {
     float: left;
     margin-right: 20px;
 }
+
+.about-content-container:not(:last-child):after {
+    display: block;
+    height: 2px;
+    background-color: #4A90E2;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* 404 Page styles
+-------------------------------------------------- */
 
 .jumbotron-404 {
     background-image: url(/images/dead-end.jpeg);
@@ -267,7 +277,18 @@ blockquote::after {
     max-height: 200px;
 }
 
+/* Series Summary styles
+-------------------------------------------------- */
+.series-summary a {
+    text-decoration: none;
+    color: #000;
+}
+
 .series-summary-card {
     padding: 20px;
     margin-bottom: 20px;
+}
+
+.series-summary-date {
+    font-size: .8em;
 }
