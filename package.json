@@ -20,10 +20,15 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-hash": "^4.2.2",
+    "gulp-rsync": "0.0.8",
+    "gulp-run": "^1.7.1",
     "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.5",
     "gulp-util": "^3.0.8"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gulp-dotenv": "^0.2.1"
+  },
   "keywords": [],
   "description": ""
 }
