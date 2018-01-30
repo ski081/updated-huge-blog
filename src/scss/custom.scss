@@ -1,0 +1,298 @@
+$tint-color: #4A90E2;
+$light-text-color: #f5f5f5;
+$blockquote-border-color: #999;
+
+body {
+    font-size: 20px;
+}
+
+.header-container {
+    padding: 20px 0;
+    margin: 0;
+}
+
+.nav-item a {
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.nav-item a:hover {
+    color: $tint-color;
+    text-decoration: none;
+    border-bottom: 3px solid $tint-color;
+    padding-bottom: 3px;
+}
+
+a.nav-item-selected {
+    color: $tint-color;
+    text-decoration: none;
+    border-bottom: 3px solid $tint-color;
+    padding-bottom: 3px;    
+}
+
+.navbar-nav {
+    padding-left: 30px;
+}
+
+.navbar-nav > li {
+    padding: 0 10px;
+}
+
+.list-container {
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+.article-summary-container {
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.summary-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.summary-container a:hover {
+    text-decoration: underline;
+}
+
+.byline-separator {
+    margin: 20px 0;
+}
+
+.tint-color {
+    color: $tint-color;
+    border-color: $tint-color;
+}
+
+.article-detail-container {
+    padding: 30px 0 30px 0;
+}
+
+/* Tag Badge styles
+-------------------------------------------------- */
+
+.tag-badge-container a {
+    color: #fff;
+}
+
+.tag-badge-container h5 {
+    display: inline-block;
+}
+
+.tag-badge {
+    background-color: $tint-color;
+}
+
+.site-header a:hover {
+    text-decoration: none;
+}
+
+.article-content a {
+    color: $tint-color;
+}
+
+.article-content a:hover, 
+.about-container a:hover {
+    color: #fff;
+    background-color: $tint-color;
+    text-decoration: none;
+}
+
+.contact-list a {
+    color: $tint-color;
+}
+
+.contact-link a:hover {
+    color: $tint-color;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.archive-container {
+    padding: 30px 0;
+}
+
+.archive-group {
+    list-style: none;
+    padding-bottom: 40px;
+}
+
+.archive-entry-list {
+    list-style: none;
+}
+
+.archive-entry-title {
+    text-decoration: none;
+    color: #000;
+    font-size: 20pt;
+}
+
+.archive-entry-title:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.archive-entry {
+    padding-bottom: 20px;
+}
+
+.tag-container {
+    padding: 30px 0;
+}
+
+.tag-container h2 {
+    padding-bottom: 20px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: $light-text-color;
+}
+
+.footer-container {
+    height: 60px;
+}
+
+.footer-copy {
+    padding-left: 50px;
+    font-size: .9em;
+}
+
+pre {
+    padding: 20px;
+}
+
+.footer-list a {
+    padding: 0 10px;
+    color: #fff;
+}
+
+.footer-list a:hover {
+    color: #4A90E2;
+}
+
+/* BlockQuote styles
+-------------------------------------------------- */
+
+blockquote {
+    display:block;
+    background: #fff;
+    padding: 15px 20px 15px 45px;
+    margin: 0 0 20px;
+    position: relative;
+    
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #666;
+    text-align: justify;
+    
+    /*Borders - (Optional)*/
+    border-left: 3px solid $tint-color;   
+ }
+
+ blockquote::before {
+    content: "\201C"; /*Unicode for Left Double Quote*/
+
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: $blockquote-border-color;
+
+    /*Positioning*/
+    position: absolute;
+    left: 10px;
+    top:5px;
+}
+
+blockquote::after {
+    /*Reset to make sure*/
+    content: "";
+}
+
+/* About Page styles
+-------------------------------------------------- */
+
+.about-container {
+    margin-top: 30px;
+}
+
+#profile-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+}
+
+.about-content-container:not(:last-child):after {
+    display: block;
+    height: 2px;
+    background-color: $tint-color;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* 404 Page styles
+-------------------------------------------------- */
+
+.jumbotron-404 {
+    background-image: url(/images/dead-end.jpeg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    padding: 0;
+    margin: 0;
+}
+
+.not-found-text h1 {
+    color: rgb(32, 30, 30);
+    text-transform: uppercase;
+}
+
+#not-found-image {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* Series Summary styles
+-------------------------------------------------- */
+.series-summary a {
+    text-decoration: none;
+    color: #000;
+}
+
+.series-summary-card {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.series-summary-date {
+    font-size: .8em;
+}
