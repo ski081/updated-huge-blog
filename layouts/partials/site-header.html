@@ -22,9 +22,10 @@
                     </li>
                 {{ end }}
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0 text-light border-light" type="submit">Search</button>
+            <form class="form-inline my-2 my-lg-0" role="search" method="get" action="https://www.google.com/search">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" value="" name="q" title="Search for:">
+                <input type="hidden" name="sitesearch" value="markstruzinski.com">
+                <button class="btn btn-outline-success my-2 my-sm-0 text-light border-light" type="submit" value="search">Search</button>
             </form>
         </div>
     </nav>
