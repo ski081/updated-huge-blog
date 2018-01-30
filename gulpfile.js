@@ -3,9 +3,8 @@ var gutil           = require('gulp-util');
 var sass            = require('gulp-sass');
 var autoprefixer    = require('gulp-autoprefixer');
 var del             = require('del');
-var shell           = require('gulp-shell');
 var run             = require('gulp-run');
-var rsync           = require('gulp-rsync');
+var env             = require('dotenv').config()
 
 // Path variables
 var SASS_SRC_PATH       = 'src/scss/**/*.scss';
@@ -19,6 +18,12 @@ var JS_PATH             = 'static/js/**/*';
 var JS_DEST_PATH        = 'static/js';
 var DIST_PATH           = 'public';
 var DIST_FILES          = 'public/**';
+
+// Environment Variables
+var USERNAME = process.env.USERNAME;
+var PUBLIC_PATH = process.env.PUBLIC_PATH;
+var IP_ADDRESS = process.env.IP;
+var REMOTE_PATH = process.env.REMOTE_PATH;
 
 // Compile and compress sass files. Deploy to static folder
 gulp.task('scss', function() {
@@ -46,11 +51,18 @@ gulp.task('clean', function() {
 });
 
 gulp.task('deploy', ['clean', 'hugo-build'], function() {
-    var taskLine = 'rsync -arvz -e \'ssh -p 44444\' --progress --delete public/ ski081@66.175.214.108:/var/www/markstruzinski.com/public_html';
-    return run(taskLine).exec()
+    // var taskLine = 'rsync -arvz -e \'ssh -p 44444\' --progress --delete public/ ski081@66.175.214.108:/var/www/markstruzinski.com/public_html';
+    var startTaskLine = 'rsync -arvz -e \'ssh -p 44444\' --progress --delete ';
+    var taskline = startTaskLine + PUBLIC_PATH + ' ' + USERNAME + '@' + IP_ADDRESS + ':' + REMOTE_PATH;
+    //public/ ski081@66.175.214.108:/var/www/markstruzinski.com/public_html';
+    console.log('running task: ' + taskline);
+    return run(taskline).exec()
         .pipe(gulp.dest('output'));
 });
 
-gulp.task('hugo-build', shell.task(['hugo']));
+gulp.task('hugo-build', function() {
+    return run('hugo').exec()
+        .pipe(gulp.dest('output'));
+});
 
 gulp.task('default', ['watch']);
