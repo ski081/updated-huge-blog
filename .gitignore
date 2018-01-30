@@ -2,3 +2,5 @@ public
 /deploy.sh
 /.env
 /node_modules
+/output/rsync
+/output/hugo
