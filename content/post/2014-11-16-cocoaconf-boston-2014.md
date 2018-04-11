@@ -5,6 +5,7 @@ date = "2014-11-16"
 tags = ["cocoaconf", "conferences", "community"]
 author = "Mark Struzinski"
 showSocial = false
+slug = "cocoaconf-boston-2014"
 
 +++
 

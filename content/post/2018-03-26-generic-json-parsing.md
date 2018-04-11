@@ -1,9 +1,10 @@
 +++
 
 author = "Mark Struzinski"
-title = "Generic Json Parsing"
-date = 2018-02-08T14:31:43-05:00
-draft = true
+title = "Generic JSON Parsing"
+tags = ["json", "swift", "codable"]
+date = 2018-03-26T14:31:43-05:00
+slug = "generic-json-parsing"
 
 +++
 
@@ -45,17 +46,24 @@ struct PropertyEntry<T: Codable>: Codable {
     let value: T
 }
 
+enum CodingKeys: String, CodingKey {
+    case appVersion = "app_version"
+    case value
+}
+
 {{< /highlight >}}
 
-The main object that holds all of these entries is called `BusinessProperties". Here is what the setup looks like for that file:
+The main object that holds all of these entries is called `BusinessProperties`. 
+
+Here is what the setup looks like for that file:
 
 {{< highlight swift >}}
 
-struct BusinessProperties {
+struct BusinessProperties: Codable {
     let customerCareNumber: PropertyEntry<String>
     let productSearchLimit: PropertyEntry<Int>
 
-    case CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case customerCareNumber = "customer_care_number"
         case productSearchLimit = "product_search_limit"
     }
@@ -63,4 +71,6 @@ struct BusinessProperties {
 
 {{< /highlight >}}
 
-This was one of those times that the simple solution didn't seem like it _should_ work. But once I wrote some unit tests to check it, it ran exactly as expected. I was very impressed with the simplicity and expressiveness of this solution. Swift is such a nice language to work in.
+This was one of those times that the simple solution didn't seem like it _should_ work. But once I wrote some unit tests to check it, everything decoded exactly as expected. I was very impressed with the simplicity and expressiveness of this solution. Swift is such a nice language to work in.
+
+In my next post, I'll take this approach further with some more complex objects.

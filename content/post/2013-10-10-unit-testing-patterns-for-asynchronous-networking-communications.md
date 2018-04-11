@@ -5,6 +5,7 @@ date = "2013-10-10"
 tags = ["unit-testing"]
 author = "Mark Struzinski"
 showSocial = false
+slug = "unit-testing-patterns-for-asynchronous-networking-communications"
 
 +++
 
