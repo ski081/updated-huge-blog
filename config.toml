@@ -8,3 +8,6 @@ paginate = 5
     tag = "tags"
     category = "categories"
     series = "series"
+
+[permalinks]
+  post = "/:year/:month/:title/"
