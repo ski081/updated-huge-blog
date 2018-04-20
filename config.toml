@@ -1,7 +1,7 @@
 baseURL = "http://markstruzinski.com/"
 languageCode = "en-us"
 title = "MS"
-
+canonifyURLs = true
 paginate = 5
 
 [taxonomies]

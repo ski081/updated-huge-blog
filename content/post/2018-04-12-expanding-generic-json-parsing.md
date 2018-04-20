@@ -54,4 +54,29 @@ public struct PropertySetting<T: Codable>: Codable {
 
 {{< /highlight >}} 
 
-The `defaultValue` in this 
+The `defaultValue` in this object is decoded exactly the same way as the object in the [last post](/2018/03/generic-json-parsing/). The interesting part comes in when decoding `valuesByVersion`. This item it typed as an array of `PropertyEntry<T>`. For this one, we're going to have to drop into a custom init to get the object decoded properly. 
+
+Here's the relevant code block, then I'll walk through and explain everything:
+
+{{< highlight swift >}}
+
+public init(from decoder: Decoder) throws {
+	let container = try decoder.container(keyedBy: CodingKeys.self)
+    
+	var defaultValue = try container.decode(T.self, forKey: .defaultValue)
+	let valuesByVersion = try? container.decode(Array<BCPAppVersionValue<T>>.self, forKey: .valuesByVersion)
+    
+	if let versions = valuesByVersion,
+    	let appVersion = decoder.userInfo[BCPPropertyOptions.key] as? String {
+    	if let updatedDefault = versions.filter({ version -> Bool in
+        	version.appVersion == appVersion
+    	}).first {
+        	defaultValue = updatedDefault.defaultValue
+    	}
+	}
+    
+	self.defaultValue = defaultValue
+	self.valuesByVersion = valuesByVersion
+}
+
+{{< /highlight >}}
