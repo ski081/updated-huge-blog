@@ -45,17 +45,18 @@ let’s bring in 2 3rd party libraries by creating a podspec file and telling
 CocoaPods to set everything up for us.
 
 ## Set up a Podspec file
+
 1. Close Xcode if it’s still open
 2. Create a file in the base folder of your project named `Podfile` with no extension
-2. Add a line telling CocoaPods the platform and version of iOS you are using.
-	1. `platform :ios, '6.0'`
-3. Add lines for 2 pods (these are really dependencies on 3rd party code)
-	1. `pod ‘SVProgressHUD’`
-	2. `pod ‘MagicalRecord’`
-4. Save your file and close it
-5. Open terminal, navigate to the base folder of your project, and enter the following line
-	1. `pod install`
-6. You should see some status lines go by, then a line instructing you to use a
+3. Add a line telling CocoaPods the platform and version of iOS you are using.
+  1. `platform :ios, '6.0'`
+4. Add lines for 2 pods (these are really dependencies on 3rd party code)
+  1. `pod ‘SVProgressHUD’`
+  2. `pod ‘MagicalRecord’`
+5. Save your file and close it
+6. Open terminal, navigate to the base folder of your project, and enter the following line
+  1. `pod install`
+7.**** You should see some status lines go by, then a line instructing you to use a
 workspace now instead of the project file. This is because CocoaPods creates a
 second project named `Pods` and adds it and your original project to a workspace
 named after your project. In my case, it created a `LogicTests.xcworkspace file`.
